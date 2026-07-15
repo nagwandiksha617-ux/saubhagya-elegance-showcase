@@ -1,6 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import heroAsset from "@/assets/hero-dress.png.asset.json";
+import logoAsset from "@/assets/logo.png.asset.json";
+import sareeOrange from "@/assets/saree-orange.png.asset.json";
+import suitBlue from "@/assets/suit-blue.png.asset.json";
+import sareePink from "@/assets/saree-pink.png.asset.json";
+import suitCoral from "@/assets/suit-coral.png.asset.json";
+import coordBlue from "@/assets/coord-blue.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -13,7 +19,10 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const IMG = heroAsset.url;
+const LOGO = logoAsset.url;
+const HERO_IMG = heroAsset.url;
+const IMAGES = [sareePink.url, suitBlue.url, sareeOrange.url, suitCoral.url, coordBlue.url, heroAsset.url];
+const pick = (i: number) => IMAGES[i % IMAGES.length];
 const WHATSAPP = "https://wa.me/919999999999";
 const INSTAGRAM = "https://instagram.com/merasaubhagya";
 

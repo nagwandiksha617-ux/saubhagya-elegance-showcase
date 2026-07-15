@@ -257,12 +257,12 @@ function About() {
 }
 
 const COLLECTIONS = [
-  { title: "Sarees", desc: "Hand-woven silks, chiffons and organzas that flow with grace." },
-  { title: "Suit Sets", desc: "Elegant three-piece ensembles for every celebration." },
-  { title: "Kurtis", desc: "Everyday sophistication with heirloom craftsmanship." },
-  { title: "Lehengas", desc: "Statement lehengas designed for the modern muse." },
-  { title: "Gowns", desc: "Indo-western couture for red carpet moments." },
-  { title: "Festive", desc: "Curated pieces for weddings, festivals and rituals." },
+  { title: "Silk Sarees", desc: "Softly draped pink silks with delicate gold detailing." },
+  { title: "Embroidered Suits", desc: "Powder-blue three-piece sets with fine thread work." },
+  { title: "Festive Sarees", desc: "Rich rust and orange silks for weddings and rituals." },
+  { title: "Anarkali Suits", desc: "Coral floor-length ensembles with intricate embroidery." },
+  { title: "Co-ord Sets", desc: "Contemporary blue co-ords in flowing wide-leg silhouettes." },
+  { title: "Signature Gowns", desc: "Hand-embellished navy couture for red carpet moments." },
 ];
 
 function Collections() {

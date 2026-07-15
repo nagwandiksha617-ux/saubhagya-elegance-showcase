@@ -494,7 +494,7 @@ function Contact() {
           </form>
 
           <div className="reveal space-y-4">
-            <ContactCard icon={<WhatsAppIcon className="h-5 w-5" />} title="WhatsApp" value="+91 99999 99999" href={WHATSAPP} />
+            
             <ContactCard icon={<InstagramIcon className="h-5 w-5" />} title="Instagram" value="@merasaubhagya" href={INSTAGRAM} />
             <ContactCard icon={<span>✉</span>} title="Email" value="hello@merasaubhagya.com" href="mailto:hello@merasaubhagya.com" />
             <ContactCard icon={<span>◉</span>} title="Studio" value="42 Heritage Lane, Jaipur, Rajasthan 302001" />

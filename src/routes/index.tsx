@@ -48,11 +48,11 @@ function useReveal() {
   }, []);
 }
 
-function Logo({ className = "" }: { className?: string }) {
+function Logo({ className = "", variant = "light" }: { className?: string; variant?: "light" | "dark" }) {
   return (
-    <a href="#home" className={`flex items-center gap-2 ${className}`}>
-      <span className="grid h-10 w-10 place-items-center rounded-full gold-gradient text-white font-display text-lg shadow-[var(--shadow-soft)]">
-        M
+    <a href="#home" className={`flex items-center gap-3 ${className}`}>
+      <span className={`grid h-11 w-11 place-items-center overflow-hidden rounded-full ring-1 ${variant === "dark" ? "ring-gold/40 bg-[#0a0a0a]" : "ring-gold/30 bg-[#0a0a0a]"} shadow-[var(--shadow-soft)]`}>
+        <img src={LOGO} alt="Mera Saubhagya logo" className="h-full w-full object-contain" />
       </span>
       <span className="flex flex-col leading-none">
         <span className="font-display text-lg tracking-wide">Mera Saubhagya</span>

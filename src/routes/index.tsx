@@ -175,7 +175,7 @@ function Hero() {
           <div className="absolute -inset-6 rounded-[3rem] gold-gradient opacity-30 blur-3xl" />
           <div className="relative overflow-hidden rounded-[2rem] shadow-[var(--shadow-luxe)] ring-1 ring-gold/30">
             <img
-              src={IMG}
+              src={HERO_IMG}
               alt="Mera Saubhagya premium navy ethnic gown"
               className="h-[480px] w-full object-cover object-top sm:h-[600px] lg:h-[720px]"
               loading="eager"
@@ -215,7 +215,7 @@ function About() {
         <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="reveal relative">
             <div className="overflow-hidden rounded-[2rem] shadow-[var(--shadow-luxe)] ring-1 ring-gold/20">
-              <img src={IMG} alt="Craftsmanship" className="h-[520px] w-full object-cover object-top" loading="lazy" />
+              <img src={suitCoral.url} alt="Craftsmanship" className="h-[520px] w-full object-cover object-top" loading="lazy" />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden md:block glass rounded-2xl p-5 shadow-[var(--shadow-soft)]">
               <p className="font-display text-3xl text-gradient-gold">10+</p>
@@ -274,7 +274,7 @@ function Collections() {
           {COLLECTIONS.map((c, i) => (
             <article key={c.title} className="reveal group relative overflow-hidden rounded-[1.75rem] bg-white shadow-[var(--shadow-soft)] ring-1 ring-gold/15 transition-all duration-500 hover:-translate-y-2 hover:shadow-[var(--shadow-luxe)]" style={{ transitionDelay: `${i * 60}ms` }}>
               <div className="relative h-80 overflow-hidden">
-                <img src={IMG} alt={c.title} loading="lazy" className="h-full w-full object-cover object-top transition-transform duration-[1.4s] group-hover:scale-110" />
+                <img src={pick(i)} alt={c.title} loading="lazy" className="h-full w-full object-cover object-top transition-transform duration-[1.4s] group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent opacity-80" />
                 <div className="absolute top-4 left-4 rounded-full glass px-3 py-1 text-[10px] uppercase tracking-widest text-white">
                   0{i + 1}
@@ -339,7 +339,7 @@ function Gallery() {
                 i === 0 || i === 5 ? "col-span-2 row-span-2 aspect-square" : "aspect-[3/4]"
               }`}
             >
-              <img src={IMG} loading="lazy" alt={`Gallery ${i + 1}`} className="h-full w-full object-cover object-top transition-transform duration-[1.4s] group-hover:scale-125" />
+              <img src={pick(i)} loading="lazy" alt={`Gallery ${i + 1}`} className="h-full w-full object-cover object-top transition-transform duration-[1.4s] group-hover:scale-125" />
               <div className="absolute inset-0 bg-charcoal/0 transition-colors group-hover:bg-charcoal/25" />
             </div>
           ))}
@@ -367,7 +367,7 @@ function Testimonials() {
               <div className="flex gap-1 text-gold">{"★★★★★".split("").map((s, k) => <span key={k}>{s}</span>)}</div>
               <blockquote className="mt-4 text-charcoal/80 leading-relaxed">{t.q}</blockquote>
               <figcaption className="mt-6 flex items-center gap-3 border-t border-gold/20 pt-4">
-                <img src={IMG} alt={t.n} loading="lazy" className="h-12 w-12 rounded-full object-cover object-top ring-2 ring-gold/40" />
+                <img src={pick(i)} alt={t.n} loading="lazy" className="h-12 w-12 rounded-full object-cover object-top ring-2 ring-gold/40" />
                 <div>
                   <p className="font-display">{t.n}</p>
                   <p className="text-xs text-muted-foreground">{t.r}</p>
@@ -450,7 +450,7 @@ function Instagram() {
         <div className="mt-14 grid grid-cols-2 gap-3 md:grid-cols-6 md:gap-4">
           {Array.from({ length: 6 }).map((_, i) => (
             <a key={i} href={INSTAGRAM} target="_blank" rel="noreferrer" className="reveal group relative aspect-square overflow-hidden rounded-2xl ring-1 ring-gold/25">
-              <img src={IMG} loading="lazy" alt={`Instagram ${i + 1}`} className="h-full w-full object-cover object-top transition-transform duration-[1.4s] group-hover:scale-110" />
+              <img src={pick(i)} loading="lazy" alt={`Instagram ${i + 1}`} className="h-full w-full object-cover object-top transition-transform duration-[1.4s] group-hover:scale-110" />
               <div className="absolute inset-0 grid place-items-center bg-charcoal/0 transition-all group-hover:bg-charcoal/50">
                 <InstagramIcon className="h-8 w-8 text-white opacity-0 transition group-hover:opacity-100" />
               </div>

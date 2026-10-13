@@ -12,10 +12,12 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { property: "og:image", content: `https://mera-saubhagya.lovable.app${heroAsset.url}` },
-      { name: "twitter:image", content: `https://mera-saubhagya.lovable.app${heroAsset.url}` },
+      { property: "og:image", content: "https://saubhagya-elegance-showcase.lovable.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: "https://saubhagya-elegance-showcase.lovable.app/og-image.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://saubhagya-elegance-showcase.lovable.app/" }],
   }),
 });
 
